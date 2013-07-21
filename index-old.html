@@ -4,45 +4,48 @@
     <meta charset="utf-8">
     <title>Proof reader</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="stylesheet/main.css">
-    <script src="javascript/jquery-1.10.2.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.css">
+    <script src="public/javascript/jquery-1.10.2.js"></script>
+    <script src="public/bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
 
+<!-- Mobile-friendly navbar adapted from example. -->
+<!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar"
+                    data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Proof reader</a>
 
-<div class="navbar navbar-fixed-top">
-    <div class="container">
-
-        <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-
-        <!-- Be sure to leave the brand out there if you want it shown -->
-        <a class="navbar-brand" href="#">Proof reader</a>
-
-        <!-- Place everything within .navbar-collapse to hide it until above 768px -->
-        <div class="nav-collapse collapse navbar-responsive-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-        <!-- /.nav-collapse -->
     </div>
-    <!-- /.container -->
 </div>
-<!-- /.navbar -->
 
+<!-- We use row-fluid inside containers to achieve a resizable layout. -->
+<!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+<!-- http://stackoverflow.com/a/12270322 -->
 <div class="container">
 
-    <div class="row heading">
-        <div class="col-lg-12">
+
+    <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+    <!-- www.google.com/fonts/specimen/Ubuntu -->
+    <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+    <div class="row-fluid heading">
+        <div class="span12">
             <h1>Proof reader</h1>
         </div>
     </div>
@@ -95,7 +98,7 @@
     </div>
     <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-            <img class="img-polaroid" src="images/Matthias_stom_young_man_reading_by_candlelight.jpg">
+            <img class="img-polaroid" src="public/images/Matthias_stom_young_man_reading_by_candlelight.jpg">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->

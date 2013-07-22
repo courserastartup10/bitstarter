@@ -1,1 +1,7 @@
 body { padding-top: 70px; }
+
+.mainTopCarousel img {
+    width: auto;
+    height: 400px;
+    max-height: 400px;
+}

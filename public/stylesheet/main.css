@@ -5,3 +5,7 @@ body { padding-top: 70px; }
     height: 400px;
     max-height: 400px;
 }
+
+img.column-width {
+    width: 100%;
+}

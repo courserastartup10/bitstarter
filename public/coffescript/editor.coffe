@@ -1,0 +1,3 @@
+$ ->
+  console.log 'coffee loaded'
+  $('#annotationParagraph').annotator()

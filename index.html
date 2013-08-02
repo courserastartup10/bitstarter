@@ -5,7 +5,9 @@
     <title>Proof reader</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="stylesheet/main.css">
+    <link rel="stylesheet/less" type="text/css" href="stylesheet/main.less"/>
+    <link href='http://fonts.googleapis.com/css?family=Bonbon' rel='stylesheet' type='text/css'/>
+    <script src="javascript/less/less-1.4.1.min.js"></script>
     <script src="javascript/jquery-1.10.2.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
 </head>
@@ -39,6 +41,18 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-10 col-offset-1">
+            <div class="bs-example">
+                <div class="alert fade in">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <h4>WARNING! Everything on this site is a school project conducted for a <a
+                            href="https://www.coursera.org/course/startup">Stanford / Coursera online course!</a></h4>
+
+                    <h3 class="text-danger">WARNING! You won't get anything you order</h3>
+                    <button type="button" id="dismissSchoolWarning" class="btn btn-danger" data-dismiss="alert"
+                            style="width: 100%">Dismiss warning!
+                    </button>
+                </div>
+            </div>
             <h1 class="text-center">Proof reader</h1>
         </div>
     </div>
@@ -99,6 +113,42 @@
     </div>
     <br/>
     <br/>
+
+    <div class="row">
+        <div class="col-lg-5 col-offset-1">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Preorder with Bitcoin</div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 class="media-heading">Plainum package</h4>
+                        Pre order the Plainum package
+                        <p class="bitCoinAmount">1
+                            <img class="bitCoinImage" src="images/Bitcoin_euro.png"/>
+                        </p>
+                        <hr class="linePreOrderLevels">
+                    </div>
+                    <div class="col-lg-12">
+                        <h4 class="media-heading">Gold package</h4>
+                        Pre order the Gold package
+                        <p class="bitCoinAmount">0.1
+                            <img class="bitCoinImage" src="images/Bitcoin_euro.png"/>
+                        </p>
+                        <hr class="linePreOrderLevels">
+                    </div>
+                    <div class="col-lg-12">
+                        <h4 class="media-heading">Silver package</h4>
+                        Pre order the Silver package
+                        <p class="bitCoinAmount">0.01
+                            <img class="bitCoinImage" src="images/Bitcoin_euro.png"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-lg-5 col-offset-1">
